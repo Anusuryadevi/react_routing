@@ -44,13 +44,13 @@
 }
 .nav-link {
 
-  color: azure;
+  color: azure !important;
   list-style-type: none;
   margin: 0;
   padding: 0;
 
 }
-li {
+.li {
   float: left;
   padding: 16px;
   color: blue;
@@ -65,4 +65,7 @@ li {
   color:darkslategrey;
   text-align: center;
   margin: 0%;
+}
+.margin {
+  margin: 10px;
 }

@@ -1,9 +1,17 @@
-const About = () => {
+import React from "react";
+import { UserConsumer } from "../context/usercontext";
+export const About = () => {
+    console.log("render about")
     return (
-        <>
-        <h1>About information</h1>
-        </>
+        <UserConsumer>{ (username)=>{
+           return <>
+            <h1>About information</h1> 
+            <h4> hello {username} </h4>
+            </>  
+        } 
+        }
+        </UserConsumer>
     )
 }
 
-export default About;
+export const MemoizedAbout = React.memo(About);

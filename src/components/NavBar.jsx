@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 return <>
 <nav className="nav">
-            <ul className="nav-link">
+            <ul >
                 <Link to='/list'>
-                    <li>List</li>
+                    <li className="nav-link">List</li>
                 </Link>
                 <Link to='/about'>
-                    <li>About</li>
+                    <li className="nav-link">About</li>
                 </Link>
                 <Link to='/contact'>
-                    <li>Contact</li>
+                    <li className="nav-link">Contact</li>
                 </Link>
                 <Link to='/feedback'>
-                    <li>FeedBack</li>
+                    <li className="nav-link">FeedBack</li>
                 </Link>
                 </ul>
         </nav>
